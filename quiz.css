@@ -1,0 +1,162 @@
+* {
+    font-family: "Overpass", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+/* quiz application style */
+
+.app {
+    background-color: #fff;
+    width: 80%;
+    max-width: 50vw;
+    margin: 5% auto 0;
+    border-radius: 10px;
+    padding: 2%;
+    height: auto;
+}
+
+.app h1 {
+    color: rgb(0, 71, 86);
+    font-weight: 800;
+    font-size: clamp(1rem, 0.2188rem + 2.5vw, 1.625rem);
+    border-bottom: 1px solid rgb(0, 71, 86);
+    padding-bottom: 2%;
+}
+
+.quiz-container {
+    padding: 2% 0;
+    display: none;
+}
+
+.quiz-container h2 {
+    font-weight: 600;
+    color: rgb(0, 71, 86);
+    font-size: clamp(1rem, 0.6875rem + 1vw, 1.25rem);
+    padding: 1%;
+}
+
+/* style to keep track of progress */
+
+.progress-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;
+    border-bottom: 1px solid rgb(0, 71, 86);
+}
+
+#progressText {
+    width: 40%;
+}
+
+#progressBar {
+    height: 1.5rem;
+    width: 9rem;
+    border: 1px solid rgb(0, 71, 86);
+    border-radius: 4px;
+    width: 40%;
+}
+
+#progressBarFull {
+    background-color: rgb(0, 71, 86);
+    height: 1.4rem;
+    width: 50%;
+    border-radius: 3px;
+}
+
+/* additional question style */
+
+#question {
+    padding: 2% 0;
+
+}
+
+/* answer buttons style */
+
+.btn {
+    background-color: #fff;
+    font-weight: 700;
+    font-size: clamp(1rem, 1rem + 0vw, 1rem);
+    width: 100%;
+    border: 1px solid rgb(0, 71, 86);;
+    padding: 1%;
+    margin: 1% 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background-color: rgb(0, 71, 86);
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+/* other buttons */
+
+#next-btn {
+    background-color: rgb(0, 71, 86);
+    color: #fff;
+    font-weight: 500;
+    width: 20%;
+    border: 0;
+    padding: 1%;
+    margin: 2% auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+#input-btn {
+    background-color: rgb(0, 71, 86);
+    color: #fff;
+    font-weight: 500;
+    width: 20%;
+    border: 0;
+    padding: 1%;
+    margin: 2% auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* input */
+
+#codeInput {
+    color: rgb(0, 71, 86);
+    font-weight: 500;
+    width: 20%;
+    border: 0;
+    padding: 1%;
+    margin: 2% auto 0;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+/* correct and incorrect state style */
+
+.correct {
+    background-color: #83f28f
+}
+
+.incorrect {
+    background-color: #e57373
+}
+
+/* code validation section style */
+
+.validation {
+    padding: 2%;
+    color: rgb(0, 71, 86);
+}
